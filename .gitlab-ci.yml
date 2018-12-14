@@ -24,7 +24,6 @@ stages:
   - prod
 
 
-
 build:
   stage: build
   script:
@@ -34,3 +33,7 @@ build:
     - app/build/outputs/
 
 
+unitTests:
+  stage: test
+  script:
+    - ./gradlew test
