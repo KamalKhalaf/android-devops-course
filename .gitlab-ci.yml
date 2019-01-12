@@ -19,7 +19,7 @@ before_script:
 stages:
   - build
   - test
-  - quality_assurance
+  - static_analysis
   - fabric
   - prod
 
@@ -40,7 +40,7 @@ unitTests:
 
 
 static_analysis:
-  stage: quality_assurance
+  stage: static_analysis
   script:
     - ./gradlew lint
     - ./gradlew detekt
