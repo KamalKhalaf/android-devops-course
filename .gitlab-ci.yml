@@ -47,3 +47,9 @@ static_analysis:
   artifacts:
     paths:
       - app/build/reports/
+
+
+fabricBeta:
+  stage: fabric
+  script:
+  - fastlane beta

@@ -24,6 +24,7 @@ platform :android do
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "clean assembleRelease")
+    gradle(task: "doIncrementVersionCode")
     upload_beta()
   end
 
@@ -36,8 +37,10 @@ end
 
 
 def upload_beta()
-  crashlytics(
-       api_token":"4f5a0834e91dc222e01138199fcdc434a20d80f8",
-       build_secret:"2041e26755bb15bbc52f747b3b6cdfc9d013c019baf84d7dfda5b1b75e43758f"
-  )
+
+      crashlytics(
+                  api_token: "4f5a0834e91dc222e01138199fcdc434a20d80f8",
+                  build_secret: "2041e26755bb15bbc52f747b3b6cdfc9d013c019baf84d7dfda5b1b75e43758f"
+               )
+
 end
