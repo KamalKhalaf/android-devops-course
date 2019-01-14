@@ -53,3 +53,10 @@ fabricBeta:
   stage: fabric
   script:
   - fastlane beta
+
+
+playstore:
+  stage: prod
+  script:
+  - fastlane deploy
+
