@@ -56,10 +56,12 @@ fabricBeta:
   only:
   - master
 
+
 playstore:
   stage: prod
   script:
   - fastlane deploy
-  only:
+   only:
     - master
+
 
