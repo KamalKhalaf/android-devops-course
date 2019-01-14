@@ -1,0 +1,70 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+ENV["SLACK_WEB_HOOK_URL"] = "https://hooks.slack.com/services/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"
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do
+    begin
+      gradle(task: "clean assembleRelease")
+      gradle(task: "doIncrementVersionCode")
+      upload_beta()
+       on_success("build is successfully uploaded to crashlatics")
+        rescue =>exception
+       on_error(exception)
+      end
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end
+
+
+def upload_beta()
+
+      crashlytics(
+                  api_token: "4f5a0834e91dc222e01138199fcdc434a20d80f8",
+                  build_secret: "2041e26755bb15bbc52f747b3b6cdfc9d013c019baf84d7dfda5b1b75e43758f"
+               )
+
+end
+
+def on_success(success_msg)
+    slack(
+     message: success_msg,
+     success:true,
+     slack_url:ENV["SLACK_WEB_HOOK_URL"]
+   )
+ end
+
+ def on_error(exception)
+    slack(
+     message: "something went wrong check *Error Info* for more details.",
+     success:false,
+     slack_url:ENV["SLACK_WEB_HOOK_URL"],
+     payload:{"ErrorInfo" => exception.to_s}
+   )
+ end

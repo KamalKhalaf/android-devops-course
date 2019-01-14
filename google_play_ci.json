@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-6120246210537256981-801954",
+  "private_key_id": "2c38804de781594d39e9f17c18b971b9ee799970",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3MKVtIULlmNnj\nguu6Lopr57dXoUOlA+YZBLfTk0kUG9g+T5RGKJKlwtwBX8Sh2OcwxudK3KQZWKbq\nE22Hc/pEMYgXvJ9UpEv00e/aQTO7Cs4rbO2SU1sbAAlNOXCH6udyiHICpI16/cew\nwKJjfu2TvwLUk1YfgrGJehFWMiYZVWgTNMP5PfvD0xFy8ryM55lGrJE7p34zu5Ug\n9fd4FeTvkPdEAZkw03394uk+sUJqZDpItGYu7iwf2C7dbOSGaRqPY9HxAgODhkZ6\nyLJIJS1/z0CfvOqnmmVlnH+mRakf87FytaHLasMy3FdYP+4mkybUXqCj6X0hW4Ye\n+yVK4L1/AgMBAAECggEAFQGMBp6IyEElwxPxKfFKSCNS/8ZrNlHjIb1LwwQhnh+v\nRT3k18KxRja4+aNcrd5sbEhynz/7xThIM5E0vxKKgSVY4LftYUxRtWoZYeKWJv2P\nNKWR/HR4fvkbF/LdN4i1L4n74NezrYXKTzdXp6cXYRjHH08h0g0vhH8t2792ZPMX\nQV3LsnrujapLihRHWmqrtKu3Wzd/TEinS+2T3hkii+EkDOT7m5evc36VGH058jFd\nH+/i1pf/+uofUWHOb2aPo4/QghTw0/DvqzwZItCWJIpasL0E/o13sK2Zby4y46mQ\n9Fiub2a8l+Nxx7RwULfhUGauanVL/EphmvTGcCdxCQKBgQDwxVS/serBUW5YDziJ\ngb9O3IHbgCKx2Ge+1RFOnwWFVJUy1b78/7fz3mzA/xoOfYsPRKTEaHFFZX9LtNlA\ntGCzTnz4yv27mXt7Oe+6GegcEqo+gT8raYznzjBJYoB2catiOEpkkT6ZAS9JVyc6\nVsVgnYNFODLFY69eYsO2eCF2XQKBgQDCxvDpL/gRlRO1zMpmUnR9iPKJE0aT4lRc\nxB0UGKEppUgk1YK83/RLgUL4n3Br+3OklZZVWcqVnyApLeu0ZzRYme7Idcg6HzEh\nbrUNVowRFNSj/mlimYCFQE7gxMDv/GDiMD7tgwg56S8XxqIWL8r61d+WYgPThKKE\nsArT/9HNiwKBgQCnbyLjeA+fxkgs9tDDVzY52kB366C0+qAS5kr12MJXGR30Tw5V\nFGPRNIF+qShuoUF+KadHarYyo0Wl2SsnwwhoSRHBVjCjMDXd2MlsKq3uL9CyTOEo\nCGvTm+Cad+SL+bpMQIcDbroQXvGKWBBQkp0J9h+emFk+SXdf9ODTWLE0hQKBgQCI\nNGAhYPcDLJGE7zmWRhDJ/GtGKeGP5pSB7m47MGH64mbJwzjSZXXLGxA/Fheim0sq\nC6T9+HVvHcB6q28JT6ZOUw6kxaCH7GoJ7AXV1vDJvRxZtb3yQk+aXvcJvO0CpSUG\n5yAKLTgibwsMgE22YCN8NvVMjywHzNdtHEHmMB2BswKBgQDBH1Yiw6TINCvGHsvW\nbAEXuu8hqDXQkxqrEj9EBqRlClAh+nbS/JVKT6PV/5w2BNApmHBoutbRI0TgM0GV\nLbBzv8H1U/lXm4Qpb+lM0O5S9YDqMakRoetvNBWhb8cO8lmshq6ZNWXZvFpiUXf+\njwhsD0eqQRD/MVYixxw+L4rDzQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-android-devops-course@api-6120246210537256981-801954.iam.gserviceaccount.com",
+  "client_id": "107138898365010997894",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-android-devops-course%40api-6120246210537256981-801954.iam.gserviceaccount.com"
+}
