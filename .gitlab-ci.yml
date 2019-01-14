@@ -61,7 +61,7 @@ playstore:
   stage: prod
   script:
   - fastlane deploy
-   only:
+  only:
     - master
 
 
