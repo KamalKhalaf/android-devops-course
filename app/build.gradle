@@ -6,8 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'io.gitlab.arturbosch.detekt'
 
-
-apply plugin: 'io.fabric'
+//
+//apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 28
@@ -83,8 +83,13 @@ def increaseVersionCode() {
     }
 }
 
-task doIncrementVersionCode << {
-    println("Incrementing the Version Code")
+//task doIncrementVersionCode << {
+//    println("Incrementing the Version Code")
+//    increaseVersionCode()
+//}
+
+tasks.register("doIncrementVersionCode") {
+    println("Incremnent version code")
     increaseVersionCode()
 }
 
@@ -101,8 +106,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation('com.crashlytics.sdk.android:crashlytics:2.9.8@aar') {
-        transitive = true;
-    }
+//    implementation('com.crashlytics.sdk.android:crashlytics:2.9.8@aar') {
+//        transitive = true;
+//    }
 
 }
