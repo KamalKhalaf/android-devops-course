@@ -11,7 +11,7 @@
 #
 
 # Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+ update_fastlane
 
 ENV["SLACK_WEB_HOOK_URL"] = "https://hooks.slack.com/services/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"
 
