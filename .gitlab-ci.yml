@@ -49,12 +49,12 @@ static_analysis:
       - app/build/reports/
 
 
-fabricBeta:
-  stage: fabric
-  script:
-  - fastlane beta
-  only:
-  - master
+#fabricBeta:
+#  stage: fabric
+#  script:
+#  - fastlane beta
+#  only:
+#  - master
 
 
 playstore:
