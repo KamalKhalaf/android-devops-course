@@ -12,6 +12,7 @@ variables:
   ANDROID_SDK_TOOLS: "4333796"
 
 before_script:
+  - yes | sdkmanager --licenses && yes | sdkmanager --update
   - export GRADLE_USER_HOME=$(pwd)/.gradle
   - chmod +x ./gradlew
 
