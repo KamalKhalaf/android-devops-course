@@ -64,7 +64,7 @@ playstore:
   script:
   - fastlane deploy
   only:
-    - master
+    - playground
 
 
 
