@@ -10,7 +10,7 @@ apply plugin: 'io.gitlab.arturbosch.detekt'
 //apply plugin: 'io.fabric'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 29
 
     def versionPropsFile = file('version.properties')
 
@@ -29,7 +29,7 @@ android {
             versionName name
             versionCode code
             minSdkVersion 15
-            targetSdkVersion 31
+            targetSdkVersion 29
 
         }
 
