@@ -62,7 +62,7 @@ static_analysis:
 playstore:
   stage: prod
   script:
-  - fastlane deploy
+  - fastlane build_bundle
   only:
     - master
 

@@ -42,6 +42,12 @@ platform :android do
   end
 end
 
+  desc "Build release app bundle"
+  lane :build_bundle do
+    gradle(task: "clean bundleRelease")
+    fastlane build_bundle
+  end
+
 
 def upload_beta()
 
