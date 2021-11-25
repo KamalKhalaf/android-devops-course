@@ -12,7 +12,6 @@ variables:
   ANDROID_SDK_TOOLS: "4333796"
 
 before_script:
-  - export JAVA_HOME=$(update-alternatives --list java)
   - gem install bundler
   - bundle install
   - yes | sdkmanager --licenses && yes | sdkmanager --update
