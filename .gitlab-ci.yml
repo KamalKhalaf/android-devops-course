@@ -12,7 +12,7 @@ variables:
   ANDROID_SDK_TOOLS: "4333796"
 
 before_script:
-  - export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-14.jdk/Contents/Home
+  - export JAVA_HOME=/usr/libexec/java_home
   - gem install bundler
   - bundle install
   - yes | sdkmanager --licenses && yes | sdkmanager --update
